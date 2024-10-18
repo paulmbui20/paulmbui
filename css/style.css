@@ -1,39 +1,49 @@
-
 @font-face {
   src: url("../fonts/SometypeMono-VariableFont_wght.ttf");
   font-family: Typed;
 }
-
-body{
+html {
+  scroll-behavior: smooth;
+}
+body {
   background-color: #f1f1fd;
   font-family: Typed;
-  line-height: 1.25em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
-  font-size: 20px;
-  color:#00ffde;
+  font-size: 22px;
+  color: #00ffde;
 }
-a:hover{
+i {
+  letter-spacing: 8px;
+  color: #089a80;
+  font-size: 25px;
+}
+i:hover {
+  color: #010101;
+}
+a:hover {
   color: #089a80;
 }
-p{
-  font-size: 20px;
+p {
+  font-size: 22px;
 }
-main{
-  padding-left: 25px;
-  padding-right: 25px;
+main {
+  padding-left: 40px;
+  padding-right: 40px;
 }
-h1{
+
+h1 {
   font-size: 55px;
 }
 
 nav {
   background-color: #010101;
   color: #f1f1fd;
-  padding: 25px;
+  padding: 40px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -69,43 +79,59 @@ nav a:hover {
   margin: 4px 0;
 }
 
-.container{
-display: flex;
-flex-direction: row;
-align-content: center;
-
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
-.card{
-  width: 30%;
+.card {
+  width: 31%;
   background-color: #0a0a0a;
   border-radius: 10px;
   color: #f1f1fd;
-margin: 10px;
- 
+  margin: 10px;
 }
-.card-info{
+.card-info {
   padding: 0px 10px 10px;
 }
-.card img{
-  width: 338px;
+.card img {
+  width: 393px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
+.row1,
+.row2 {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 45%;
+}
+#about {
+  margin-top: 25px;
+}
+ul {
+  list-style: none;
+  line-height: 1.5em;
+}
+.social-icons-footer {
+  margin: 50px 550px;
+}
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
- .container{
-  display: block;
-  margin: 0;
-  padding: 0;
- }
- .card{
-  width: 98%;
- }
- .card img{
-  width: 100%;
-}
+  .container {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    width: 98%;
+  }
+  .card img {
+    width: 100%;
+  }
   .menu-items {
     display: none;
     padding-left: 10px;
@@ -126,116 +152,105 @@ margin: 10px;
   .menu-toggle {
     display: flex;
   }
-  .home-h1{
+  .home-h1 {
     line-height: 1.1em;
-  font-size: 90px;
+    font-size: 90px;
   }
 
-.btn-primary{
-  margin-bottom: 10px;
-}
-.social-icons-hero{
-display: none;
-}
-.hero-main{
-  display: block;
-}
-.me{
-  width: 300px;
-  border-radius: 50%;
-}
+  .btn-primary {
+    margin-bottom: 10px;
+  }
+
+  .hero-main {
+    display: block;
+  }
+  .me {
+    width: 300px;
+    border-radius: 50%;
+  }
+  .row1,
+  .row2 {
+    width: 98%;
+  }
 }
 
 @media screen and (min-width: 601px) {
-  .home-h1{
+  .home-h1 {
     font-size: 65px;
     line-height: 1em;
   }
-  .hero-image{
+  .hero-image {
     margin-right: 20px;
   }
-  .hero-main{
+  .hero-main {
     padding-top: 15px;
     display: flex;
     flex-direction: row;
   }
-  .me{
+  .me {
     width: 400px;
   }
-  .container1{
+  .container1 {
     width: 45.5%;
   }
-
+  .social-icons-hero {
+    margin: 10px;
+    width: 4.5%;
+  }
 }
 
-
-span{
+span {
   font-size: 19px;
 }
 
-.hero-image{
+.hero-image {
   width: 45%;
 }
-.hero-main{
-
+.hero-main {
   align-items: center;
   padding: 20px 0 25px;
 }
-.menu-items a{
- margin-right: 15px;
+.menu-items a {
+  margin-right: 15px;
 }
-.menu-items a:hover{
-
+.menu-items a:hover {
 }
 
-
-i{
-  padding: 2px;
-}
-.social-icons-hero{
-  margin: 10px;
-  width: 4.5%;
-
-}
-.social-icons-hero a{
+.social-icons-hero a {
   text-decoration: none;
-  color: #089a80;
   line-height: 1.5em;
   font-size: 30px;
 }
-.social-icons-hero a:hover{
-  color: #010101;
-}
-.btn-primary{
+
+/*Buttons*/
+.btn-primary {
   border-radius: 5px;
   border: none;
   padding: 10px 16px;
   background-color: #00ffde;
   color: #010101;
-  font-size: 18px;
+  font-size: 22px;
   outline: none;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: white;
   border: 1px solid #010101;
   cursor: pointer;
   outline: none;
 }
-.btn-outline{
+.btn-outline {
   border-radius: 5px;
   border: 1px solid #00ffde;
   padding: 10px 16px;
   background-color: #ffffff;
   color: #010101;
-  font-size: 18px;
+  font-size: 24px;
   outline: none;
 }
-.btn-outline:hover{
+.btn-outline:hover {
   border: none;
   background-color: #010101;
   color: #00ffde;
   cursor: pointer;
   outline: none;
 }
-
-
