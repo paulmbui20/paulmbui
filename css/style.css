@@ -85,7 +85,6 @@ nav a:hover {
   align-content: center;
 }
 .card {
-  width: 31%;
   background-color: #0a0a0a;
   border-radius: 10px;
   color: #f1f1fd;
@@ -95,11 +94,13 @@ nav a:hover {
   padding: 0px 10px 10px;
 }
 .card img {
-  width: 393px;
+  width: 300px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
+.card span{
+  padding: 10px 0 20px 10px;
+}
 .row1,
 .row2 {
   background-color: #ffffff;
