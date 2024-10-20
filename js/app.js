@@ -5,3 +5,9 @@ const mobileMenu = document.getElementById('mobile-menu');
     menuItems.classList.toggle('active');
   });
 
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling effect
+    });
+}
