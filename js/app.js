@@ -25,7 +25,7 @@ function emailSend(){
 	"<br/> Email " + email +
   "<br/> Message " + message;
 	Email.send({
-    SecureToken : "7318f739-8c66-46ae-bb88-2a6a94d6df1d",
+    SecureToken : "55247384-b560-4d76-80ea-aace923bd8d9",
     To : 'tymestech@gmail.com',
     From : "tymestech@gmail.com",
     Subject : "This is the subject",
