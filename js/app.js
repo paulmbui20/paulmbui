@@ -26,7 +26,7 @@ $(document).ready(function() {
     // Send the form data to Google Apps Script
     $.ajax({
       url: 'https://script.google.com/macros/s/AKfycbz4T0VxjYq17YUs7iHQfuP2xBOJXJAAYjMOdqzICbI6KEMmPUWDcwPAL-vwqt2B8Hvo/exec', // Replace with your Web App URL
-      type: 'POST',
+      type: 'GET',
       contentType: 'application/json',
       data: JSON.stringify(formData),
       success: function(response) {
