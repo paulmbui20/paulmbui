@@ -12,7 +12,7 @@ function scrollToTop() {
   });
 }
 function emailSend() {
-  var userName = document.getElementById("name").value;
+ var userName = document.getElementById("name").value;
   var phone = document.getElementById("phone").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
@@ -31,7 +31,7 @@ function emailSend() {
     Username: "tymestech@gmail.com",
     Password: "356C23223ADC44CFC6F85C01B7EF1B11A82C",
     To: "tymestech@gmail.com",
-    From: "paulmbui20@gmail.com",
+    From: "tymestech@gmail.com",
     Subject: "This is the subject",
     Body: messageBody,
   }).then((message) => {
@@ -44,11 +44,13 @@ function emailSend() {
 }
 
 /*Email.send({
-  SecureToken : "7318f739-8c66-46ae-bb88-2a6a94d6df1d",
-  To : 'tymestech@gmail.com',
-  From : "tymestech@gmail.com",
-  Subject : "This is the subject",
-  Body : "And this is the body"
+  Host: "smtp.elasticemail.com",
+    Username: "tymestech@gmail.com",
+    Password: "356C23223ADC44CFC6F85C01B7EF1B11A82C",
+    To: "tymestech@gmail.com",
+    From: "paulmbui20@gmail.com",
+    Subject: "This is the subject",
+    Body: messageBody,
 }).then(
 
 message => alert(message)
