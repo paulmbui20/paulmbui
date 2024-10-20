@@ -255,23 +255,3 @@ span {
   cursor: pointer;
   outline: none;
 }
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  background-color: #010101;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 22px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Hover effect */
-.scroll-to-top-btn:hover {
-  background-color: #16faff;
-  color: #010101;
-}
