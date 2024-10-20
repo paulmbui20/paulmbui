@@ -11,52 +11,16 @@ function scrollToTop() {
     behavior: "smooth", // Smooth scrolling effect
   });
 }
-function emailSend() {
- var userName = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-
-  var messageBody =
-    "Name " +
-    userName +
-    "<br/> Phone " +
-    phone +
-    "<br/> Email " +
-    email +
-    "<br/> Message " +
-    message;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "tymestech@gmail.com",
-    Password: "356C23223ADC44CFC6F85C01B7EF1B11A82C",
-    To: "tymestech@gmail.com",
-    From: "tymestech@gmail.com",
-    Subject: "This is the subject",
-    Body: messageBody,
-  }).then((message) => {
-    if (message == "OK") {
-      swal("Sucess", "Message Sent", "success");
-    } else {
-      swal("Error", "Failed, Unknown error", "error");
-    }
-  });
+function sendToWhatsapp(){
+	let number = "+254746544646";
+	let name = document.getElementById('name').value;
+	let email = document.getElementById('email').value;
+  let phone = document.getElementById('phone').value;
+	let message = document.getElementById('message').value;
+	var url = "https://wa.me/" + number + "?text="
+	+ "Hello I'm " +name+ "%0a"
+	+ "My Email is " +email+ "%0a"
+  + "My Phone is " +phone+ "%0a"
+	+ "and my Message is " +message+ "%0a%0a";
+	window.open(url, '_blank').focus();
 }
-
-/*Email.send({
-  Host: "smtp.elasticemail.com",
-    Username: "tymestech@gmail.com",
-    Password: "356C23223ADC44CFC6F85C01B7EF1B11A82C",
-    To: "tymestech@gmail.com",
-    From: "paulmbui20@gmail.com",
-    Subject: "This is the subject",
-    Body: messageBody,
-}).then(
-
-message => alert(message)
-);*/
-//7318f739-8c66-46ae-bb88-2a6a94d6df1d
-//passswpord= 356C23223ADC44CFC6F85C01B7EF1B11A82C
-//username = tymestech@gmail.com
-//host= smtp.elasticemail.com
-//port= 2525
