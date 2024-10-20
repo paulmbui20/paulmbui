@@ -50,7 +50,7 @@
 
     <main>
       <div class="form-container">
-        <form action="" needs-validation>
+        <form onsubmit="emailSend(); reset(); return false;">
           <div class="row">
             <div class="col-md-6">
           
@@ -121,6 +121,8 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <script src="js/smtp.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>r
   </body>
 </html>
